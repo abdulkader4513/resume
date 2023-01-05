@@ -14,6 +14,7 @@ def buildImage() {
 
 def deployApp() {
     echo 'deploying the application...'
+    sh 'docker run -p 8081:8081 abdulkader4513/resume:latest'
 } 
 
 return this
